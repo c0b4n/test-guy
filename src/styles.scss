@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+$w: 165px;
+$h: 240px;
+$rY: 180deg;
+
+.ih {
+  overflow: hidden;
+  display: inline-block;
+  width: $w;
+  height: $h;
+  border: 1px solid;
+
+  img {
+    width: 700px;
+    transform: rotateY($rY);
+  }
+
+  &.-a {
+    img {
+      transform: translate($w * -3, $h * -1) rotateY($rY);
+    }
+  }
+}
